@@ -1,0 +1,27 @@
+.title-bar{
+    -fx-background-color: #23272a;
+}
+
+.title-bar .label{
+    -fx-text-fill: #99aab5;
+    -fx-font-size: 14px;
+}
+
+.title-bar #exit-circle{
+    -fx-fill: #8b0000;
+}
+.title-bar #fullscreen-circle{
+    -fx-fill: #006400;
+}
+.title-bar #minimize-circle{
+    -fx-fill: #8B8000;
+    }
+.title-bar #exit-circle:hover{
+    -fx-fill: #ff0000;
+}
+.title-bar #fullscreen-circle:hover{
+    -fx-fill: #00ff00;
+}
+.title-bar #minimize-circle:hover{
+    -fx-fill: #ffff00;
+}
