@@ -82,7 +82,8 @@ public class Handler extends Thread implements Listener {
                 event.getServerConnection().requestNewSession(id);
                 userData.save();
             }
-            else {
+            if(!userData.getBoolean("remember-login")){
+                //first login
                 Platform.runLater(()->{
                     stage.close();
                     passwordBrowserScene = new PasswordBrowserScene(connection);

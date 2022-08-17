@@ -46,9 +46,7 @@ public class PasswordBrowserScene extends CustomScene<VBox> {
         label.setMinWidth(180);
         label.setTextAlignment(TextAlignment.CENTER);
         label.setOnMouseClicked(e -> {
-            StringSelection selection = new StringSelection(text);
-            Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-            clipboard.setContents(selection, selection);
+            Utils.copyToClipboard(text);
         });
         return label;
     }

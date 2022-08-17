@@ -22,7 +22,7 @@ public class DeleteConfirmScene extends CustomScene<VBox> {
     public void build() {
         getTypeRoot().setAlignment(Pos.CENTER);
         getStage().initStyle(StageStyle.UNDECORATED);
-        getStylesheets().add("stylesheets/Main.css");
+        getStylesheets().add("stylesheets/main.css");
         HBox hBox = new HBox();
         hBox.setMinHeight(80);
         addAllNodes(new CustomTitleBar("Delete " + name+"?", getStage()));

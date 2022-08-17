@@ -34,7 +34,7 @@ public class ImageScene extends CustomScene<BorderPane> {
 
         getTypeRoot().setCenter(progressIndicator);
 
-        getStylesheets().add("stylesheets/Main.css");
+        getStylesheets().add("stylesheets/main.css");
         CustomTitleBar titleBar = new CustomTitleBar(name, getStage());
         getTypeRoot().setTop(titleBar);
 
